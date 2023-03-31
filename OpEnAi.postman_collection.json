@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "d0c6cd13-19d5-4f10-bd34-96287a42ddc2",
+		"name": "OpEnAi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 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",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model\": \"text-davinci-003\",\r\n  \"prompt\": \"Write program add two number c++\",\r\n  \"temperature\": 0,\r\n  \"max_tokens\": 150,\r\n  \"top_p\": 1.0,\r\n  \"frequency_penalty\": 0.0,\r\n  \"presence_penalty\": 0.0\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.openai.com/v1/completions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openai",
+						"com"
+					],
+					"path": [
+						"v1",
+						"completions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
